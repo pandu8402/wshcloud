@@ -6,22 +6,31 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage 
+import com.test.automation.uiAutomation.testBase.TestBase;
+
+public class HomePage extends TestBase
 {
   @FindBy(how = How.ID, using = "leftBrand")
   public static WebElement leftbrand;
   
   public HomePage(WebDriver driver)
   {
+	  this.driver = driver;
 	  PageFactory.initElements(driver, this);
   }
   
   
   public boolean veriyLoginFunctionality()
   {
-	  if(leftbrand.isDisplayed())
+	  try {
+		  waitForElement(100, leftbrand);
+		  leftbrand.isDisplayed();
+		  log.info("User logged in succesfully and company barnd is displayed ");
 		  return true;
-	  else
-		  return false;
+	  }catch(Exception e)
+	  {
+		return false;  
+	  }
+	  
   }
 }

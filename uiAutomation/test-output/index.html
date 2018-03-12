@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Smoke_Tests">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Tests" title="com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithInvalidCredentials" hash-for-method="verifyLoginwithInvalidCredentials">verifyLoginwithInvalidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Tests" title="com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithValidCredentials" hash-for-method="verifyLoginwithInvalidCredentials">verifyLoginwithInvalidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Smoke_Tests -->
@@ -120,7 +120,7 @@
           <div class="suite-Smoke_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithInvalidCredentials</span>
+              <span class="class-name">com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithValidCredentials</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -142,11 +142,14 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Smoke Tests&quot;&gt;
-  &lt;test name=&quot;TC001_VerifyLoginwithInvalidCredentials&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.test.automation.uiAutomation.customListner.Listner&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;TC001_VerifyLoginwithValidCredentials&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithInvalidCredentials&quot;/&gt;
+      &lt;class name=&quot;com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithValidCredentials&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TC001_VerifyLoginwithInvalidCredentials --&gt;
+  &lt;/test&gt; &lt;!-- TC001_VerifyLoginwithValidCredentials --&gt;
 &lt;/suite&gt; &lt;!-- Smoke Tests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,7 +161,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TC001_VerifyLoginwithInvalidCredentials (1 class)</span>
+                <span class="test-name">TC001_VerifyLoginwithValidCredentials (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,8 +190,8 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginwithInvalidCredentials')
-data.setCell(0, 2, 'com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithInvalidCredentials')
-data.setCell(0, 3, 3054);
+data.setCell(0, 2, 'com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithValidCredentials')
+data.setCell(0, 3, 3051);
 window.suiteTableData['Smoke_Tests']= { tableData: data, tableDiv: 'times-div-Smoke_Tests'}
 return data;
 }
@@ -219,18 +222,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithInvalidCredentials</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithValidCredentials</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginwithInvalidCredentials</span>
-                <span class="method-start">15673 ms</span>
+                <span class="method-start">17392 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">18730 ms</span>
+                <span class="method-start">20448 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

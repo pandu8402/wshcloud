@@ -1,7 +1,8 @@
-2018-03-09 23:47:44 INFO  TestBase:22 - -------Launching browser--------
-2018-03-09 23:47:59 INFO  TestBase:25 - -------browser launched--------
-2018-03-09 23:47:59 INFO  TC001_VerifyLoginwithInvalidCredentials:30 - ================Starting verifyLoginwithInvalidCredentials test=============== 
-2018-03-09 23:48:00 INFO  LoginPage:35 - Entered username = IPMN\Admin1
-2018-03-09 23:48:00 INFO  LoginPage:37 - Entered password = WSCAdmin
-2018-03-09 23:48:00 INFO  TC001_VerifyLoginwithInvalidCredentials:33 - ================Ending verifyLoginwithInvalidCredentials test=============== 
-2018-03-09 23:48:02 INFO  TC001_VerifyLoginwithInvalidCredentials:36 - login is successfull
+2018-03-12 23:17:53 INFO  TestBase:30 - -------Launching browser--------
+2018-03-12 23:18:10 INFO  TestBase:34 - -------browser launched--------
+2018-03-12 23:18:10 INFO  TC001_VerifyLoginwithValidCredentials:30 - ================Starting verifyLoginwithValidCredentials test=============== 
+2018-03-12 23:18:10 INFO  LoginPage:35 - Entered username = IPMN\Admin1
+2018-03-12 23:18:11 INFO  LoginPage:37 - Entered password = WSCAdmin
+2018-03-12 23:18:11 INFO  TC001_VerifyLoginwithValidCredentials:33 - ================Ending verifyLoginwithValidCredentials test=============== 
+2018-03-12 23:18:13 INFO  TestBase:28 - User logged in succesfully and company barnd is displayed 
+2018-03-12 23:18:13 INFO  TC001_VerifyLoginwithValidCredentials:36 - login is successfull

@@ -2,9 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Smoke Tests">
-<test name="TC001_VerifyLoginwithInvalidCredentials">
+<listeners>
+  <listener class-name="com.test.automation.uiAutomation.customListner.Listner"></listener>
+</listeners>
+<test name="TC001_VerifyLoginwithValidCredentials">
   <classes>
-     <class name="com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithInvalidCredentials"></class>
+     <class name="com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithValidCredentials"></class>
   </classes>  
 </test>
 </suite>

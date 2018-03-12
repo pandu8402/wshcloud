@@ -10,12 +10,12 @@ import com.test.automation.uiAutomation.uiActions.HomePage;
 import com.test.automation.uiAutomation.uiActions.LoginPage;
 
 
-public class TC001_VerifyLoginwithInvalidCredentials extends TestBase{
+public class TC001_VerifyLoginwithValidCredentials extends TestBase{
 	
 	LoginPage loginpage;
 	HomePage homepage;
 	
-	public static final Logger log = Logger.getLogger(TC001_VerifyLoginwithInvalidCredentials.class.getName());
+	public static final Logger log = Logger.getLogger(TC001_VerifyLoginwithValidCredentials.class.getName());
 	
 	
 	@BeforeTest
@@ -27,12 +27,12 @@ public class TC001_VerifyLoginwithInvalidCredentials extends TestBase{
 	@Test
 	public void verifyLoginwithInvalidCredentials() {
 		try {
-			log.info("================Starting verifyLoginwithInvalidCredentials test=============== ");
+			log.info("================Starting verifyLoginwithValidCredentials test=============== ");
 			loginpage = new LoginPage(driver);
 			loginpage.loginToApplication("IPMN\\Admin1", "WSCAdmin");		
-			log.info("================Ending verifyLoginwithInvalidCredentials test=============== ");
+			log.info("================Ending verifyLoginwithValidCredentials test=============== ");
 			homepage = new HomePage(driver);
-			Assert.assertTrue(homepage.veriyLoginFunctionality());
+			Assert.assertTrue(homepage.veriyLoginFunctionality() );
 			log.info("login is successfull");
 		}catch(Exception e)
 		{
