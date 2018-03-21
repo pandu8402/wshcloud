@@ -18,7 +18,7 @@ public class TestBase {
 	
 	public static final Logger log = Logger.getLogger(TestBase.class.getName());
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	public String browser = "chrome";
 	public String url = "https://wshcloud.com";
 	Listner listner;
@@ -56,6 +56,11 @@ public class TestBase {
 	{
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	public String getURL()
+	{
+		return driver.getCurrentUrl();
 	}
 
 }

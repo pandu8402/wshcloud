@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke Tests]">
+  <listeners>
+    <listener class-name="com.test.automation.uiAutomation.customListner.Listner"/>
+  </listeners>
+  <test name="TC001_VerifyLoginwithValidCredentials(failed)">
     <classes>
-      <class name="com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithInvalidCredentials">
+      <class name="com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithValidCredentials">
         <methods>
-          <include name="setUp"/>
           <include name="verifyLoginwithInvalidCredentials"/>
+          <include name="setUp"/>
           <include name="endTest"/>
         </methods>
-      </class> <!-- com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithInvalidCredentials -->
+      </class> <!-- com.test.automation.uiAutomation.LoginPage.TC001_VerifyLoginwithValidCredentials -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TC001_VerifyLoginwithValidCredentials(failed) -->
+</suite> <!-- Failed suite [Smoke Tests] -->

@@ -1,8 +1,11 @@
-2018-03-12 23:17:53 INFO  TestBase:30 - -------Launching browser--------
-2018-03-12 23:18:10 INFO  TestBase:34 - -------browser launched--------
-2018-03-12 23:18:10 INFO  TC001_VerifyLoginwithValidCredentials:30 - ================Starting verifyLoginwithValidCredentials test=============== 
-2018-03-12 23:18:10 INFO  LoginPage:35 - Entered username = IPMN\Admin1
-2018-03-12 23:18:11 INFO  LoginPage:37 - Entered password = WSCAdmin
-2018-03-12 23:18:11 INFO  TC001_VerifyLoginwithValidCredentials:33 - ================Ending verifyLoginwithValidCredentials test=============== 
-2018-03-12 23:18:13 INFO  TestBase:28 - User logged in succesfully and company barnd is displayed 
-2018-03-12 23:18:13 INFO  TC001_VerifyLoginwithValidCredentials:36 - login is successfull
+2018-03-21 21:10:58 INFO  TestBase:30 - -------Launching browser--------
+2018-03-21 21:11:30 INFO  TestBase:34 - -------browser launched--------
+2018-03-21 21:11:30 INFO  TC001_VerifyLoginwithValidCredentials:30 - ================Starting verifyLoginwithValidCredentials test=============== 
+2018-03-21 21:11:30 INFO  LoginPage:35 - Entered username = IPMN\Admin1
+2018-03-21 21:11:30 INFO  LoginPage:37 - Entered password = WSCAdmin
+2018-03-21 21:11:30 INFO  TC001_VerifyLoginwithValidCredentials:33 - ================Ending verifyLoginwithValidCredentials test=============== 
+2018-03-21 21:11:33 INFO  TestBase:33 - User logged in succesfully and company barnd is displayed 
+2018-03-21 21:11:33 INFO  TC001_VerifyLoginwithValidCredentials:36 - login is successfull
+2018-03-21 21:11:34 INFO  TC001_VerifyLoginwithValidCredentials:46 - ================Starting verifyFinancialsMenu test=============== 
+2018-03-21 21:11:34 INFO  TC001_VerifyLoginwithValidCredentials:48 - ================Ending verifyFinancialsMenu test=============== 
+2018-03-21 21:12:34 INFO  TC001_VerifyLoginwithValidCredentials:54 - Financials menu not found

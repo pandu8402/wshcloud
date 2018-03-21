@@ -8,12 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.test.automation.uiAutomation.testBase.TestBase;
 
-public class HomePage extends TestBase
+public class BasePage extends TestBase
 {
   @FindBy(how = How.ID, using = "leftBrand")
   public static WebElement leftbrand;
   
-  public HomePage(WebDriver driver)
+  @FindBy(how = How.XPATH, using = "//div[@id='TopLevelMenu']//div[contains(@href,'FinancialsMenu')]")
+  public static WebElement financialMenu;
+  
+  
+  
+  public BasePage(WebDriver driver)
   {
 	  this.driver = driver;
 	  PageFactory.initElements(driver, this);
@@ -31,6 +36,12 @@ public class HomePage extends TestBase
 	  {
 		return false;  
 	  }
-	  
+  }
+  
+  
+  public String clickOnMainMenuItem()
+  {
+	  financialMenu.click();
+	  return getURL();
   }
 }
